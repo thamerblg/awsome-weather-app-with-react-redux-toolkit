@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import cityReducer from "../features/city/citySlice";
+import weatherReducer from "../features/weather/weatherSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    city: cityReducer,
+    weather: weatherReducer,
   },
 });
